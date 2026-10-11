@@ -1,31 +1,66 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# =============================================================================
+# VIGILANT DELS WORKERS — La TdG (Upptime) · creat l'11.10.2026
+# Cada 5 minuts comprova que els Workers de Cloudflare responen. Si algun cau,
+# obre una incidència a GitHub i avisa per Telegram; quan torna, ho tanca sol.
+# =============================================================================
+
+owner: latdg
+repo: estat
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Rellotge
+    url: https://latdg-rellotge.ignasicorney.workers.dev/
+  - name: Bot de transcripcions
+    url: https://latdg-transcripcions.ignasicorney.workers.dev/
+  - name: Difusió del canal
+    url: https://latdg-difusio.ignasicorney.workers.dev/
+  - name: Bot de resums
+    url: https://latdg-resums.ignasicorney.workers.dev/
+  - name: Bot de plens
+    url: https://latdg-plens.ignasicorney.workers.dev/
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /estat
+  name: Estat dels sistemes de La TdG
+  introTitle: "Estat dels sistemes de La TdG"
+  introMessage: Comprovació automàtica, cada 5 minuts, dels bots i serveis de La Torre de Guaita.
   navbar:
-    - title: Status
+    - title: Estat
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+i18n:
+  activeIncidents: Incidències actives
+  allSystemsOperational: Tot funciona correctament
+  incidentReport: "Informe de la incidència #$NUMBER →"
+  activeIncidentSummary: "Oberta el $DATE amb $POSTS actualitzacions"
+  incidentTitle: "Incidència #$NUMBER: detalls"
+  incidentDetails: Detalls de la incidència
+  incidentFixed: Resolta
+  incidentOngoing: En curs
+  incidentOpenedAt: Oberta
+  incidentClosedAt: Tancada
+  incidentSubscribe: Subscriu-t'hi
+  incidentViewOnGitHub: Mira-la a GitHub
+  incidentCommentSummary: "Publicat el $DATE per $AUTHOR"
+  incidentBack: "← Torna a les incidències"
+  pastIncidents: Incidències anteriors
+  pastIncidentsResolved: "Resolta en $MINUTES minuts amb $POSTS actualitzacions"
+  liveStatus: En directe
+  overallUptime: "Disponibilitat total: $UPTIME"
+  overallUptimeTitle: Disponibilitat total
+  averageResponseTime: "Temps de resposta mitjà: $TIMEms"
+  averageResponseTimeTitle: Temps de resposta mitjà
+  sevenDayResponseTime: Temps de resposta (7 dies)
+  responseTimeDay: Temps de resposta (24 hores)
+  responseTimeWeek: Temps de resposta (7 dies)
+  responseTimeMonth: Temps de resposta (30 dies)
+  responseTimeYear: Temps de resposta (1 any)
+  up: Funciona
+  down: Caigut
+  degraded: Lent
+  ms: ms
+  loading: Carregant
+  navGitHub: GitHub
+  footer: Pàgina generada amb Upptime
