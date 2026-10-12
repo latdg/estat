@@ -18,6 +18,8 @@ sites:
     url: https://latdg-resums.ignasicorney.workers.dev/
   - name: Bot de plens
     url: https://latdg-plens.ignasicorney.workers.dev/
+  - name: Extractor d'àudio (mp3)
+    url: https://latdg-mp3.ignasicorney.workers.dev
 
 status-website:
   baseUrl: /estat
